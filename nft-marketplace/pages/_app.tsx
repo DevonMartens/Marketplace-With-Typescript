@@ -5,7 +5,7 @@ import { Navbar } from '../components'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <Navbar></Navbar>
+  /*  <Navbar></Navbar> /
     <Component {...pageProps}/>
     </>
   )
