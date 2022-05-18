@@ -41,7 +41,7 @@ export default function Example() {
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                    src="https://raw.githubusercontent.com/swimgithub/Marketplace-With-Typescript/master/nft-marketplace/public/images/page_logo.png"
                     alt="Workflow"
                   />
                 </div>
@@ -79,7 +79,7 @@ export default function Example() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="https://media-exp1.licdn.com/dms/image/C4E03AQFbXli54XJbbg/profile-displayphoto-shrink_200_200/0/1642382194818?e=1658361600&v=beta&t=rwOn0R2hP1OpGnazuCq2hW9rWrBJYDjgGhX09U3Z-EI"
                         alt=""
                       />
                     </Menu.Button>
