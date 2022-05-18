@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
+import BaseLayout from '../components/layout/BaseLayout'
 
 
 const Home: NextPage = () => {
   return (
-    <div>I'm here so this page does not run an error</div>
+    <BaseLayout>
+      <div>I'm here so this page does not run an error</div>
+    </BaseLayout>
   )
 }
 
