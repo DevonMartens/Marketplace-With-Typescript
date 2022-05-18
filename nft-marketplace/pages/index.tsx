@@ -16,17 +16,6 @@ const Home: NextPage = () => {
             Mint a NFT to get unlimited ownership forever!
           </p>
         </div>
-          <div className="rounded-md bg-yellow-50 p-4 mt-10">
-            <div className="flex">
-              <div className="ml-3">
-                <h3 className="text-sm font-medium text-yellow-800">Attention needed</h3>
-                <div className="mt-2 text-sm text-yellow-700">
-                  <p>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
       </div>
     </div>
   </BaseLayout>
