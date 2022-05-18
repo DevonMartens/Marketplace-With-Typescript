@@ -10,7 +10,7 @@ type Props = {
 
 const NftItem: React.FC<Props> = ({children}) => {
     return (
-<>< >
+<></>
     )
 }
 
