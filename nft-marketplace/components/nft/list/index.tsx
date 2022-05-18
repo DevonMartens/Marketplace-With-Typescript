@@ -1,9 +1,9 @@
 import * as React from "react";
 import NftItem from "../item";
-
+import { NftMeta } from "../../../types/nft";
 
 type NftListProps = {
-    nfts: any[]
+    nfts: NftMeta[]
     children?: React.ReactNode
 };
 
