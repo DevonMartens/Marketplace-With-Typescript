@@ -1,14 +1,15 @@
 import * as React from "react";
 
 
-type Props = {
+type NftListProps = {
+    nfts: any[]
     children?: React.ReactNode
 };
 
 
 
 
-const NftList: React.FC<Props> = ({children}) => {
+const NftList: React.FC<NftListProps> = ({nfts}) => {
     return (
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-flow-col-3 lg:max-w-none">
             <div className="flex flew-col rounded-lg shadow-lg overflow-hidden">
