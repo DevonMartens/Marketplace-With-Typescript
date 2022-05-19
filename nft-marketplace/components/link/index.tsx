@@ -18,7 +18,7 @@ const ActiveLink: React.FunctionComponent<LinkProps> = ({children, ...props}) =>
 if (pathname === props.href) {
     className
 } else {
-    className = _defaultClass;
+    className = _defualtClass;
 }
 
 return (
