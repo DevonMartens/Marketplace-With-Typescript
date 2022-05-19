@@ -2,10 +2,11 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Marketplace', href: '/', current: true },
-  { name: 'Create', href: '/create/nft', current: false },
+  { name: 'Create', href: 'nft/create/', current: false },
 
 ]
 
@@ -72,7 +73,7 @@ export default function Example() {
                 </button>
 
                 {/* Profile dropdown */}
-                <Menu as="div" className="ml-3 relative">
+                <Menu as="div" className="ml-3 relative z-10">
                   <div>
                     <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
@@ -133,10 +134,11 @@ export default function Example() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
+                <Link key={item.name} 
+                href={item.href}>
+                <a
+                
+                  
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
@@ -144,7 +146,8 @@ export default function Example() {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </a>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>

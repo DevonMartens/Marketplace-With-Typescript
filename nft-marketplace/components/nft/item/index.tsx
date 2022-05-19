@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NFTItem } from "../..";
 import { NftMeta } from "../../../types/nft";
-
+import Link from 'next/link';
 
 type Props = {
     children?: React.ReactNode
@@ -44,6 +44,7 @@ const NftItem: React.FC<NftItemProps> = ({item}) => {
                      
                     </dl>
                 </div>
+            
                 { item.attributes.map(attribute => 
 <div key={attribute.trait_type} className="flex flex-col px-4 pt-4">
 <dt className="order=2 text-sm font-medium">{attribute.trait_type}</dt>
