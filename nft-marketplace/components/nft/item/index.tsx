@@ -1,4 +1,5 @@
 import * as React from "react";
+import { NFTItem } from "../..";
 import { NftMeta } from "../../../types/nft";
 
 
@@ -17,7 +18,7 @@ const NftItem: React.FC<NftItemProps> = ({item}) => {
             <div className="flex flew-col rounded-lg shadow-lg overflow-hidden">
                 <div className="flex-shrink-0">
                 <img className={`h-full w-full object-cover`}
-                src={"somePHoto"}
+                src={item.image}
                 alt="New NFT"
                 />
                 </div>
@@ -26,18 +27,18 @@ const NftItem: React.FC<NftItemProps> = ({item}) => {
                         NFT Collection
                     </p>
                     <div className="block mt-2">
-                        <p className="text-xl front-semibold text-gray-900">some stuff for template</p>
-                        <p className="text-xl front-semibold text-gray-500">some stuff more for template</p>
+                        <p className="text-xl front-semibold text-gray-900">{item.name}</p>
+                        <p className="text-xl front-semibold text-gray-500">{item.description}</p>
                     </div>
                 </div>
                 <div className="overflow-hidden mb-4">
                     <dl className="-mx-4 -mt-4 flex flex-wrap">
-                        <dt className="order-2 text-sm font-medium text-zinc-400">
+                        <dt className="order-2 text-sm font-medium text-zinc-400">Price - this data comes from the contract</dt>
                             <dd className="order-2 text-sm font-medium text-indigo-400"></dd>
                             <div className="flex justify-center items-center">
                                 100 Eth 
                             </div>
-                        </dt>
+                     
                     </dl>
                 </div>
             </div>
