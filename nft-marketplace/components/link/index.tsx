@@ -15,7 +15,7 @@ const ActiveLink: React.FunctionComponent<LinkProps> = ({children, ...props}) =>
     const { pathname } = useRouter()
     let className = children.props.className || ""
     let _defualtClass = `${className} text-indigo-400 ${props.activeClass} `
-if (pathname === prependOnceListener.href) {
+if (pathname === props.href) {
     className
 } else {
     className = _defaultClass;
