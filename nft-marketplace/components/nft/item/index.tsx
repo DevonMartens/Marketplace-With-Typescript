@@ -47,7 +47,7 @@ const NftItem: React.FC<NftItemProps> = ({item}) => {
                 { item.attributes.map(attribute => 
 <div key={attribute.trait_type} className="flex flex-col px-4 pt-4">
 <dt className="order=2 text-sm font-medium">{attribute.trait_type}</dt>
-<dd className="order=1 text-sm font-medium">123</dd>
+<dd className="order=1 text-sm font-medium">{attribute.value}</dd>
 </div>
                 )
                 }
