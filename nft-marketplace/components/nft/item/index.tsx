@@ -1,14 +1,17 @@
 import * as React from "react";
+import { NftMeta } from "../../../types/nft";
 
 
 type Props = {
     children?: React.ReactNode
 };
 
+type NftItemProps = {
+    item: NftMeta;
+}
 
 
-
-const NftItem: React.FC<Props> = ({children}) => {
+const NftItem: React.FC<NftItemProps> = ({item}) => {
     return (
 <><div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-flow-col-3 lg:max-w-none">
             <div className="flex flew-col rounded-lg shadow-lg overflow-hidden">
