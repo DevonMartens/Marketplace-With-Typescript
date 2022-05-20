@@ -2,7 +2,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import Link from 'next/link'
+import  ActiveLink  from "../link"
 
 const navigation = [
   { name: 'Marketplace', href: '/', current: true },
@@ -114,8 +114,10 @@ export default function Example() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <Link key={item.name} 
-                href={item.href}>
+                <ActiveLink key={item.name} 
+                href={item.href}
+                activeClass='bg-gray-900'
+                >
                 <a
                 
                   
@@ -127,7 +129,7 @@ export default function Example() {
                 >
                   {item.name}
                 </a>
-                </Link>
+                </ActiveLink>
               ))}
             </div>
           </Disclosure.Panel>
