@@ -1,5 +1,4 @@
 import * as React from "react";
-import { NFTItem } from "../..";
 import { NftMeta } from "../../../types/nft";
 import Link from 'next/link';
 
