@@ -1,5 +1,5 @@
 import * as React from "react";
-import { NftMeta } from "../../../types/nft";
+import { NftMeta } from "../../../../types/nft";
 import Link from 'next/link';
 
 type Props = {

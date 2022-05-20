@@ -1,6 +1,6 @@
 import exp from "constants";
 import { NextPage } from "next";
-import { BaseLayout } from "../components";
+import { BaseLayout } from "./ui";
 
 
 
