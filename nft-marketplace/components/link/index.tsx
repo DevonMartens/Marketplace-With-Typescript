@@ -23,7 +23,7 @@ if (pathname === props.href) {
 
 return (
     <Link {...props}>
-        react.cloneElement(children, {class})
+        react.cloneElement(children, {className})
     </Link>
 )
 }
