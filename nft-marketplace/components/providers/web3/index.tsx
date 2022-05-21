@@ -2,7 +2,7 @@ import * as React from "react";
 import {  ReactNode, createContext, FunctionComponent, useContext, useState } from "react";
 import { MetaMaskInpageProvider } from '@metamask/providers';
 import { Contract, providers, utils } from "ethers";
-import { Web3State } from "./utils";
+import { createDefaultState, Web3State } from "./utils";
 
 
 
@@ -12,11 +12,11 @@ interface MyProps {
 }
 
 
-const Web3Context = createContext<any>(null);
+const Web3Context = createContext<any>(createDefaultState());
 
 
 const Web3Provider: React.FC<MyProps>  = ({children}) => {
-    const [web3Api, setWeb3Api] = useState<Web3State>(null)
+    const [web3Api, setWeb3Api] = useState<Web3State>(createDefaultState())
 
 
 return(
