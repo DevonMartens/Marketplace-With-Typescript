@@ -7,7 +7,7 @@ import { useWeb3 } from 'components/providers/web3';
 
 const Home: NextPage = () => {
   const { ethereum } = useWeb3();
-
+  console.log(ethereum)
   return (
     <BaseLayout>
     {/* {`is loading: ${isLoading}`} */}

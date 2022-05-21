@@ -20,9 +20,14 @@ const Web3Provider: React.FC<MyProps>  = ({children}) => {
 
     React.useEffect(() => {
         function initWeb3(){
-            const ethereum = window.ethereum;
-            
-        }      
+           // const ethereum = window.ethereum;
+           setWeb3Api({
+               ethereum: window.ethereum,
+               provider: null,
+               contract: null,
+               isLoading: false
+           })
+        } initWeb3();     
     }, [])
 
 return(
