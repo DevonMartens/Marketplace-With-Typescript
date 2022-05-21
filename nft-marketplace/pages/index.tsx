@@ -6,8 +6,8 @@ import { NftMeta } from 'types/nft';
 import { useWeb3 } from 'components/providers/web3';
 
 const Home: NextPage = () => {
-  const { ethereum } = useWeb3();
-  console.log(ethereum)
+  const { provider } = useWeb3();
+  console.log(provider);
   return (
     <BaseLayout>
     {/* {`is loading: ${isLoading}`} */}

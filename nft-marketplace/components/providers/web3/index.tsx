@@ -3,7 +3,7 @@ import {  ReactNode, createContext, FunctionComponent, useContext, useState } fr
 import { MetaMaskInpageProvider } from '@metamask/providers';
 import { Contract, providers, utils } from "ethers";
 import { createDefaultState, Web3State } from "./utils";
-
+import { ethers } from "ethers";
 
 
 
@@ -20,10 +20,10 @@ const Web3Provider: React.FC<MyProps>  = ({children}) => {
 
     React.useEffect(() => {
         function initWeb3(){
-           // const ethereum = window.ethereum;
+           const provider = new ethers.providers.Web3Provider(window.ethereum as any);
            setWeb3Api({
                ethereum: window.ethereum,
-               provider: null,
+               provider,
                contract: null,
                isLoading: false
            })
