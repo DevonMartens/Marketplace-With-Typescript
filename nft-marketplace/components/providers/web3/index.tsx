@@ -18,6 +18,12 @@ const Web3Context = createContext<any>(createDefaultState());
 const Web3Provider: React.FC<MyProps>  = ({children}) => {
     const [web3Api, setWeb3Api] = useState<Web3State>(createDefaultState())
 
+    React.useEffect(() => {
+        function initWeb3(){
+            const ethereum = window.ethereum;
+            
+        }      
+    }, [])
 
 return(
 <Web3Context.Provider value={web3Api}>
