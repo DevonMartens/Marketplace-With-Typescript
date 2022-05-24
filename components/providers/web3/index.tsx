@@ -2,7 +2,7 @@ import * as React from "react";
 import {  ReactNode, createContext, FunctionComponent, useContext, useState } from "react";
 import { MetaMaskInpageProvider } from '@metamask/providers';
 import { Contract, providers, utils } from "ethers";
-import { createDefaultState, Web3State } from "./utils";
+import { createDefaultState, Web3State, loadContract } from "./utils";
 import { ethers } from "ethers";
 
 
@@ -19,12 +19,13 @@ const Web3Provider: React.FC<MyProps>  = ({children}) => {
     const [web3Api, setWeb3Api] = useState<Web3State>(createDefaultState())
 
     React.useEffect(() => {
-        function initWeb3(){
+       async function initWeb3(){
            const provider = new ethers.providers.Web3Provider(window.ethereum as any);
+           const contract = await loadContract("SWIMMarketPlace", provider);
            setWeb3Api({
                ethereum: window.ethereum,
                provider,
-               contract: null,
+               contract,
                isLoading: false
            })
         } initWeb3();     
