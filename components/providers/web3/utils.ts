@@ -31,8 +31,9 @@ export const createDefaultState = () => {
 
 const NETWORK_ID = process.env.NEXT_PUBLIC_NETWORK_ID;
 
+
 export const loadContract = async (
-  name: string,  // NftMarket
+  name: string,  // SWIMMarketPlace
   provider: providers.Web3Provider
 ): Promise<Contract> => {
 
@@ -42,11 +43,10 @@ export const loadContract = async (
 
   const res = await fetch(`/contracts/${name}.json`);
   const Artifact = await res.json();
-
   if (Artifact.networks[NETWORK_ID].address) {
     const contract = new ethers.Contract(
-      Artifact.networks[NETWORK_ID].address,
-      Artifact.abi,
+        Artifact.networks[NETWORK_ID].address,
+        Artifact.abi,
       provider
     )
 

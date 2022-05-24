@@ -1,7 +1,5 @@
 import * as React from "react";
 import {  ReactNode, createContext, FunctionComponent, useContext, useState } from "react";
-import { MetaMaskInpageProvider } from '@metamask/providers';
-import { Contract, providers, utils } from "ethers";
 import { createDefaultState, Web3State, loadContract } from "./utils";
 import { ethers } from "ethers";
 

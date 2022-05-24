@@ -6,7 +6,7 @@ import { BaseLayout } from '../../components/ui';
 import { Switch } from '@headlessui/react'
 import Link from 'next/link'
 
-const ATTRIBUTES = ["health", "attack", "speed"]
+const ATTRIBUTES = ["attribute 1 value", "attribute 2 value", "=attribute 3 values"]
 
 const NftCreate: NextPage = () => {
   const [nftURI, setNftURI] = useState("");
@@ -130,7 +130,7 @@ const NftCreate: NextPage = () => {
                         name="name"
                         id="name"
                         className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
-                        placeholder="My Nice NFT"
+                        placeholder="Name that will represent the collection"
                       />
                     </div>
                   </div>
@@ -144,12 +144,12 @@ const NftCreate: NextPage = () => {
                         name="description"
                         rows={3}
                         className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
-                        placeholder="Some nft description..."
+                        placeholder="Describe your NFT"
                         defaultValue={''}
                       />
                     </div>
                     <p className="mt-2 text-sm text-gray-500">
-                      Brief description of NFT
+                      This is where you describe your NFT.
                     </p>
                   </div>
                   {/* Has Image? */}
@@ -209,7 +209,7 @@ const NftCreate: NextPage = () => {
                     )}
                   </div>
                   <p className="text-sm !mt-2 text-gray-500">
-                    Choose value from 0 to 100
+                    Choose value for your attribute.
                   </p>
                 </div>
                 <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
