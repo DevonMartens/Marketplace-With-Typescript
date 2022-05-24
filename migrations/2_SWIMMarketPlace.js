@@ -1,5 +1,5 @@
-const Market = artifacts.require("Market");
+const SWIMMarketPlace = artifacts.require("SWIMMarketPlace");
 
 module.exports = function (deployer) {
-  deployer.deploy(Market);
+  deployer.deploy(SWIMMarketPlace);
 };
