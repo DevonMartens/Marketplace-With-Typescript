@@ -4,16 +4,16 @@
     "name": "VIP #1",
     "attributes": [
       {
-        "trait_type": "attack",
-        "value": "20"
+        "trait_type": "Role",
+        "value": "CEO"
       },
       {
-        "trait_type": "health",
-        "value": "100"
+        "trait_type": "Location",
+        "value": "LA"
       },
       {
-        "trait_type": "speed",
-        "value": "30"
+        "trait_type": "Start",
+        "value": "06/2019"
       }
     ]
   },{
@@ -22,16 +22,16 @@
     "name": "VIP #2",
     "attributes": [
       {
-        "trait_type": "attack",
-        "value": "20"
+        "trait_type": "Role",
+        "value": "COO"
       },
       {
-        "trait_type": "health",
-        "value": "100"
+        "trait_type": "Location",
+        "value": "LA"
       },
       {
-        "trait_type": "speed",
-        "value": "30"
+        "trait_type": "Start",
+        "value": "06/2019"
       }
     ]
   },{
@@ -40,16 +40,16 @@
     "name": "VIP #3",
     "attributes": [
       {
-        "trait_type": "attack",
-        "value": "20"
+        "trait_type": "Role",
+        "value": "COS"
       },
       {
-        "trait_type": "health",
-        "value": "100"
+        "trait_type": "Location",
+        "value": "LA"
       },
       {
-        "trait_type": "speed",
-        "value": "30"
+        "trait_type": "Start",
+        "value": "12/2021"
       }
     ]
   },{
@@ -58,16 +58,16 @@
     "name": "VIP #4",
     "attributes": [
       {
-        "trait_type": "attack",
-        "value": "20"
+        "trait_type": "Role",
+        "value": "CLO"
       },
       {
-        "trait_type": "health",
-        "value": "100"
+        "trait_type": "Location",
+        "value": "LA"
       },
       {
-        "trait_type": "speed",
-        "value": "30"
+        "trait_type": "Start",
+        "value": "02/2022"
       }
     ]
   },{
@@ -76,16 +76,16 @@
     "name": "VIP #5",
     "attributes": [
       {
-        "trait_type": "attack",
-        "value": "20"
+        "trait_type": "Role",
+        "value": "Marketing"
       },
       {
-        "trait_type": "health",
-        "value": "100"
+        "trait_type": "Location",
+        "value": "LA"
       },
       {
-        "trait_type": "speed",
-        "value": "30"
+        "trait_type": "Start",
+        "value": "05/2022"
       }
     ]
   },{
@@ -94,16 +94,16 @@
     "name": "VIP #6",
     "attributes": [
       {
-        "trait_type": "attack",
-        "value": "20"
+        "trait_type": "Role",
+        "value": "SP"
       },
       {
-        "trait_type": "health",
-        "value": "100"
+        "trait_type": "Location",
+        "value": "NE"
       },
       {
-        "trait_type": "speed",
-        "value": "30"
+        "trait_type": "Start",
+        "value": "06/2019"
       }
     ]
   },{
@@ -112,16 +112,16 @@
     "name": "VIP #7",
     "attributes": [
       {
-        "trait_type": "attack",
-        "value": "20"
+        "trait_type": "Role",
+        "value": "Logo"
       },
       {
-        "trait_type": "health",
-        "value": "100"
+        "trait_type": "Location",
+        "value": "LA"
       },
       {
-        "trait_type": "speed",
-        "value": "30"
+        "trait_type": "Start",
+        "value": "06/2019"
       }
     ]
   },{
@@ -130,16 +130,16 @@
     "name": "VIP #8",
     "attributes": [
       {
-        "trait_type": "attack",
-        "value": "20"
+        "trait_type": "Role",
+        "value": "Lead Dev"
       },
       {
-        "trait_type": "health",
-        "value": "100"
+        "trait_type": "Location",
+        "value": "AZ"
       },
       {
-        "trait_type": "speed",
-        "value": "30"
+        "trait_type": "Start",
+        "value": "12/2021"
       }
     ]
   },{
@@ -148,16 +148,16 @@
     "name": "VIP #9",
     "attributes": [
       {
-        "trait_type": "attack",
-        "value": "20"
+        "trait_type": "Role",
+        "value": "SVP"
       },
       {
-        "trait_type": "health",
-        "value": "100"
+        "trait_type": "Location",
+        "value": "ATL"
       },
       {
-        "trait_type": "speed",
-        "value": "30"
+        "trait_type": "Start",
+        "value": "09/2021"
       }
     ]
   }]
