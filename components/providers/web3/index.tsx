@@ -22,14 +22,17 @@ const Web3Provider: React.FC<MyProps>  = ({children}) => {
        async function initWeb3(){
            const provider = new ethers.providers.Web3Provider(window.ethereum as any);
            const contract = await loadContract("SWIMMarketPlace", provider);
-           setWeb3Api({
-               ethereum: window.ethereum,
-               provider,
-               contract,
-               isLoading: false
-           })
-        } initWeb3();     
-    }, [])
+       
+      setWeb3Api({
+        ethereum: window.ethereum,
+        provider,
+        contract,
+        isLoading: false
+      })
+    }
+
+    initWeb3();
+  }, [])
 
 return(
 <Web3Context.Provider value={web3Api}>
