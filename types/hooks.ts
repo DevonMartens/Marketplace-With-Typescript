@@ -11,8 +11,8 @@ export type Web3Dependencies = {
 
 export type CryptoSWRResponse = SWRResponse;
 
-export type CryptoHandlerHook = () => CryptoSWRResponse 
+export type CryptoHandlerHook = (params: string) => CryptoSWRResponse 
 
 export type CryptoHookFactory = {
-    (d: Partial<Web3Dependencies>): void
+    (d: Partial<Web3Dependencies>): CryptoHandlerHook
 }

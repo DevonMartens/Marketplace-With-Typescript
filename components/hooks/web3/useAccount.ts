@@ -4,7 +4,8 @@ import useSWR from "swr";
 
 //deps -> provider, ethereum, contract (web3State)
 
-export const hookFactory: CryptoHookFactory = (deps: any) => (params: any) => {
+export const hookFactory: CryptoHookFactory = (deps) => (params) => {
+  
   const swrRes =  useSWR("web3/useAccount", () => {
      console.log(deps);
         return "Test User"
