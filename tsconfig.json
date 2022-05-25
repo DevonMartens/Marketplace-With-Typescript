@@ -15,15 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "paths": {
-      "@ui": ["componets/ui"],
-      "@ui/*": ["componets/ui/*"],
-      "@_types": ["types/*"],
-      "@providers": ["componets/providers"],
-      "@providers/*": ["componets/providers"],
-      "@hooks": ["componets/providers/*"],
-      "@_type": ["types/*"]
-    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
