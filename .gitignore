@@ -6,3 +6,5 @@ node_modules
 .env.developement
 .env.production\
 .env
+# Local Netlify folder
+.netlify
