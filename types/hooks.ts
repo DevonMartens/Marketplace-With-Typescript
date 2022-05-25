@@ -9,10 +9,16 @@ export type Web3Dependencies = {
     ethereum: MetaMaskInpageProvider;
 }
 
-export type CryptoSWRResponse = SWRResponse;
+// export type CryptoHookFactory = {
+//     (d: Partial<Web3Dependencies>): CryptoHandlerHook
+// }
 
-export type CryptoHandlerHook = (params: string) => CryptoSWRResponse 
+// export type CryptoHandlerHook = (params: string) => CryptoSWRResponse 
 
-export type CryptoHookFactory = {
-    (d: Partial<Web3Dependencies>): CryptoHandlerHook
+// export type CryptoSWRResponse = SWRResponse;
+
+
+
+export type CryptoHookFactory<D = any, P = string> = {
+    (d: Partial<Web3Dependencies>): (params: P) => SWRResponse<D> 
 }
