@@ -6,6 +6,10 @@ import { ContractFactory } from "ethers";
 type AccountHookFactory = CryptoHookFactory<string, string>
 //deps -> provider, ethereum, contract (web3State)
 
+type useAccountHook = ReturnType<AccountHookFactory>
+//type ReturnType 
+
+
 export const hookFactory:AccountHookFactory = (deps) => (params) => {
 
   const swrRes =  useSWR("web3/useAccount", () => {
