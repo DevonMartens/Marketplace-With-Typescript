@@ -40,7 +40,7 @@ const NftCreate: NextPage = () => {
               <div className="px-4 sm:px-0">
                 <h3 className="text-lg font-medium leading-6 text-gray-900">List NFT</h3>
                 <p className="mt-1 text-sm text-gray-600">
-                  This information will be displayed publicly so be careful what you share.
+                  Notice this data will be public. Keep it PG and do not share sensative information.
                 </p>
               </div>
             </div>
@@ -112,7 +112,7 @@ const NftCreate: NextPage = () => {
             <div className="px-4 sm:px-0">
               <h3 className="text-lg font-medium leading-6 text-gray-900">Create NFT Metadata</h3>
               <p className="mt-1 text-sm text-gray-600">
-                This information will be displayed publicly so be careful what you share.
+                Please note any information added here will be displayed to the public. Please keep it PG and do not share passwords or private keys.
               </p>
             </div>
           </div>
