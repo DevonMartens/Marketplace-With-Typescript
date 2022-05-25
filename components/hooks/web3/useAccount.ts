@@ -12,4 +12,4 @@ export const hookFactory: CryptoHookFactory = (deps: any) => (params: any) => {
     return swrRes;
 }
 
-export const useAccount = hookFactory({ethereum: null, provider: null, contract: });
+export const useAccount = hookFactory({ethereum: undefined, provider: undefined, contract: undefined});

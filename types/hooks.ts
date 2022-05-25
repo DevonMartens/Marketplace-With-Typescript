@@ -8,6 +8,8 @@ export type Web3Dependencies = {
     ethereum: MetaMaskInpageProvider;
 }
 
+export type Web3Dependencies = {
+    
 export type CryptoHookFactory = {
-    (d: Web3Dependencies): void
+    (d: Partial<Web3Dependencies>): void
 }
